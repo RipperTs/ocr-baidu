@@ -54,6 +54,11 @@ def getOcrResult(img_path) -> list:
     return result_tests
 
 
+@app.get("/")
+def index():
+    return "Hello, OCR!"
+
+
 @app.post("/api/v1/convert_image")
 def convert_image(image_data: ImageData):
     """
