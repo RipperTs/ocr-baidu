@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  poe:
+    container_name: ocr-baidu
+    image: registry.cn-hangzhou.aliyuncs.com/ripper/poe2openai:latest
+    restart: always
+    ports:
+      - 9880:9880
