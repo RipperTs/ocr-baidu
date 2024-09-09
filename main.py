@@ -82,6 +82,10 @@ def convert_image(image_data: ImageData):
             f.write(image_bytes)
 
         ocr_result = getOcrResult(file_path)
+
+        # 删除临时文件
+        os.remove(file_path)
+
         return {
             "data": ocr_result,
             "code": 0,
