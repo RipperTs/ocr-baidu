@@ -28,3 +28,11 @@ curl --location --request POST 'http://127.0.0.1:9880/api/v1/convert_image' \
     "base64_image": "7EJCRAgQIAAAQIECBAgQIAAAQIECBAgQIBAnMAfNAlIoP+qICgAAAAASUVORK5CYII=...."
 }'
 ```
+
+## Docker 部署
+
+> 默认的Docker镜像使用的是cpu版本, 如需使用gpu版本请自行修改Dockerfile
+
+```bash
+docker-compose up -d
+```
