@@ -6,7 +6,11 @@
 ### 安装PaddlePaddle
 - 您的机器安装的是CUDA 11，请运行以下命令安装
 ```bash
+# cuda > 11.4
 pip install paddlepaddle-gpu
+
+# cuda > 11 <= 11.4
+pip install paddlepaddle-gpu==2.5.0
 ```
 
 - 您的机器是CPU，请运行以下命令安装
